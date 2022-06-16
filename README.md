@@ -1,17 +1,23 @@
-<div align=center>
-
+<center>
 <a href="https://github.com/Leon1s97/Uttu/">
 <img src="https://cdn.jsdelivr.net/gh/Leon1s97/Uttu/docs/logo.png" alt="Logo" width="700" height="400">
 </a>
 
 # :sparkles: uttu :sparkles:
 
-<b><i>Next generation distributed crawler framework</i></b>
+***Next generation distributed crawler framework***
 
-<hr />
+</center>
+
+---
+
 
 <!-- Introduction -->
+<center>
+
 # :purple_heart: Introduction
+
+</center>
 
 A Powerful Distributed Crawler Framework Developed by Python.
 
@@ -29,20 +35,27 @@ Documentation: https://github.com/Leon1s97/Uttu/
 
 Release notes: https://github.com/Leon1s97/Uttu/releases
 
-<hr />
+---
+
+<center>
 
 # :blue_heart: Why Uttu
 
-<hr />
+</center>
+
+---
+
+<center>
 
 # :heart: QuickStart 
+
+</center>
 
 ### :star2: Installation
 
 ```bash
 $ python -m pip install uttu
 ```
-
 
 ### :star2: Directory description:
 
@@ -65,17 +78,17 @@ $ python -m pip install uttu
 ├─ setup.py
 ```
 
-
-
 ### :star2: Usage
 
 ```bash
-python3 -m venv <venv-path>
-cd <venv-path>
-uttu startproject <projectname>
+$ python3 -m venv <venv-path>
+$ cd <venv-path>
+$ uttu startproject <projectname>
 ```
 
-<hr />
+---
+
+<center>
 
 # :green_heart: Maintainers
 
@@ -88,11 +101,14 @@ uttu startproject <projectname>
 
 Thanks for all your wonderful PRs, issues and ideas. 
 
+</center>
 
-<hr />
+---
+
+<center>
 
 # :yellow_heart: License 
 
 [MIT](https://opensource.org/licenses/MIT)
 
-</div>
+</center>
