@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 <a href="https://github.com/Leon1s97/Uttu/">
 <img src="https://cdn.jsdelivr.net/gh/Leon1s97/Uttu/docs/logo.png" alt="Logo" width="700" height="400">
 </a>
@@ -7,17 +7,17 @@
 
 ***Next generation distributed crawler framework***
 
-</center>
+</div>
 
 ---
 
 
 <!-- Introduction -->
-<center>
+<div align="center">
 
 # :purple_heart: Introduction
 
-</center>
+</div>
 
 A Powerful Distributed Crawler Framework Developed by Python.
 
@@ -37,19 +37,19 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 ---
 
-<center>
+<div align="center">
 
 # :blue_heart: Why Uttu
 
-</center>
+</div>
 
 ---
 
-<center>
+<div align="center">
 
 # :heart: QuickStart 
 
-</center>
+</div>
 
 ### :star2: Installation
 
@@ -88,7 +88,7 @@ $ uttu startproject <projectname>
 
 ---
 
-<center>
+<div align="center">
 
 # :green_heart: Maintainers
 
@@ -101,14 +101,14 @@ $ uttu startproject <projectname>
 
 Thanks for all your wonderful PRs, issues and ideas. 
 
-</center>
+</div>
 
 ---
 
-<center>
+<div align="center">
 
 # :yellow_heart: License 
 
 [MIT](https://opensource.org/licenses/MIT)
 
-</center>
+</div>
