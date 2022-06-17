@@ -1,0 +1,115 @@
+<svg id="SvgjsSvg1006" width="632" height="391" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <g id="SvgjsG1008" transform="translate(25,296)">
+        <path id="SvgjsPath1009" d="M 0 0L 100 0L 100 70L 0 70Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1010">
+            <text id="SvgjsText1011" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="24.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1012" dy="16" x="50">
+                    <tspan id="SvgjsTspan1013" style="text-decoration:;">数据库驱动</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1014" transform="translate(158.5,296)">
+        <path id="SvgjsPath1015" d="M 0 0L 100 0L 100 70L 0 70Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1016">
+            <text id="SvgjsText1017" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="24.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1018" dy="16" x="50">
+                    <tspan id="SvgjsTspan1019" style="text-decoration:;">消息队列驱动</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1020" transform="translate(25,213)">
+        <path id="SvgjsPath1021" d="M 0 0L 367 0L 367 62L 0 62Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1022">
+            <text id="SvgjsText1023" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="11.875" transform="rotate(0)">
+                <tspan id="SvgjsTspan1024" dy="16" x="183.5">
+                    <tspan id="SvgjsTspan1025" style="text-decoration:;">Units</tspan>
+                </tspan>
+                <tspan id="SvgjsTspan1026" dy="16" x="183.5">
+                    <tspan id="SvgjsTspan1027" style="text-decoration:;">各种功能单元</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1028" transform="translate(25,115)">
+        <path id="SvgjsPath1029" d="M 0 0L 367 0L 367 79L 0 79Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1030">
+            <text id="SvgjsText1031" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="20.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1032" dy="16" x="183.5">
+                    <tspan id="SvgjsTspan1033" style="text-decoration:;">Environment运行环境，单元安装与更新，</tspan>
+                </tspan>
+                <tspan id="SvgjsTspan1034" dy="16" x="183.5">
+                    <tspan id="SvgjsTspan1035" style="text-decoration:;">配置文件的获取，切换</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1036" transform="translate(25,25)">
+        <path id="SvgjsPath1037" d="M 0 0L 367 0L 367 71L 0 71Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1038">
+            <text id="SvgjsText1039" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="16.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1040" dy="16" x="183.5">
+                    <tspan id="SvgjsTspan1041" style="text-decoration:;">Core</tspan>
+                </tspan>
+                <tspan id="SvgjsTspan1042" dy="16" x="183.5">
+                    <tspan id="SvgjsTspan1043" style="text-decoration:;">逻辑执行</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1044" transform="translate(413,25)">
+        <path id="SvgjsPath1045" d="M 0 0L 86 0L 86 341L 0 341Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1046">
+            <text id="SvgjsText1047" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="151.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1048" dy="16" x="43">
+                    <tspan id="SvgjsTspan1049" style="text-decoration:;">Cli</tspan>
+                </tspan>
+                <tspan id="SvgjsTspan1050" dy="16" x="43">
+                    <tspan id="SvgjsTspan1051" style="text-decoration:;">命令行工具</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1052" transform="translate(292,296)">
+        <path id="SvgjsPath1053" d="M 0 0L 100 0L 100 70L 0 70Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff"></path>
+        <g id="SvgjsG1054">
+            <text id="SvgjsText1055" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="24.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1056" dy="16" x="50">
+                    <tspan id="SvgjsTspan1057" style="text-decoration:;">消息队列驱动</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+    <g id="SvgjsG1058" transform="translate(520,25)">
+        <path id="SvgjsPath1059" d="M 0 0L 87 0L 87 341L 0 341Z" stroke="rgba(50,50,50,1)" stroke-width="2"
+              fill-opacity="1" fill="#ffffff">
+
+        </path>
+        <g id="SvgjsG1060">
+            <text id="SvgjsText1061" font-family="微软雅黑" text-anchor="middle" font-size="13px"
+                  fill="#323232" font-weight="400" opacity="1" y="151.375" transform="rotate(0)">
+                <tspan id="SvgjsTspan1062" dy="16" x="43.5">
+                    <tspan id="SvgjsTspan1063" style="text-decoration:;">Hive</tspan>
+                </tspan>
+                <tspan id="SvgjsTspan1064" dy="16" x="43.5">
+                    <tspan id="SvgjsTspan1065" style="text-decoration:;">任务管理平台</tspan>
+                </tspan>
+            </text>
+        </g>
+    </g>
+</svg>
