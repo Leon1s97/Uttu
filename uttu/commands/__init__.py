@@ -13,7 +13,7 @@ import argparse
 from typing import Any, Dict
 
 
-class BaseCommand:
+class UttuBaseCommand:
     def syntax(self):
         """Command syntax (preferably one-line). Do not include command name."""
         return ""
@@ -28,3 +28,18 @@ class BaseCommand:
         be applied to its contents.
         """
         return ""
+
+    def add_options(self, parser):
+        """
+        Populate option parse with options available for this command
+        """
+        group = parser.add_argument_group(title='Global Options')
+        group.add_argument("--logfile", metavar="FILE",
+                           help="log file. if omitted stderr will be used")
+
+
+    def run(self, args, opts):
+        """
+        Entry point for running commands
+        """
+        raise NotImplementedError
