@@ -14,8 +14,10 @@ from typing import Any, Dict
 from twisted.python import failure
 from uttu.exceptions import UsageError
 
+
 class UttuBaseCommand:
     """Base class for Uttu commands"""
+
     def __init__(self):
         self.settings: Dict[str, Any] = {}
 
