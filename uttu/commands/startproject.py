@@ -28,7 +28,7 @@ def _make_writable(path):
 
 class UttuCommand(UttuBaseCommand):
     def syntax(self):
-        return "[options] <project_name> <project_dir>"
+        return "--name <project_name> --path <project_dir> --templ <template>"
 
     def desc(self):
         return "Start a new uttu project."
@@ -66,15 +66,16 @@ class UttuCommand(UttuBaseCommand):
 
     def add_options(self, parser):
         UttuBaseCommand.add_options(self, parser)
-        parser.add_argument("-n", "--name", dest="str", action="store_true", help="Set project name")
-        parser.add_argument("-p", "--path", dest="str", action="store_true", help="Set project path,")
-        parser.add_argument("-t", "--templ", dest="str", action="store_true", help="Using pre-built project templates")
+        parser.add_argument("-n", "--name", dest="name", required=True, help="Set project name")
+        parser.add_argument("-p", "--path", dest="path", help="Set project path")
+        parser.add_argument("-t", "--templ", dest="templ", choices=['sfss', 'credit'],
+                            help="Using pre-built project templates")
 
     def run(self, args, opts):
         """
         Entry point for running commands
         """
-        if not len(args) not in [i for i in range(1, 7)]:
+        if len(args) not in [i for i in range(0, 4)]:
             raise UsageError()
 
 
