@@ -12,6 +12,10 @@
 class UsageError(Exception):
     """To indicate a command-line usage error"""
 
+    def __init__(self, *a, **kw):
+        self.print_help = kw.pop('print_help', True)
+        super().__init__(*a, **kw)
+
 
 class NameInvalidError(Exception):
     """To indicate a project name is invalid"""
