@@ -20,3 +20,8 @@ class UsageError(Exception):
 class NameInvalidError(Exception):
     """To indicate a project name is invalid"""
     # print('Project names must begin with a letter and contain' ' only\nletters, numbers and underscores')
+
+
+class PathInvalidError(Exception):
+    """To indicate a project path is invalid"""
+    # print('Given folder has already exists!')
