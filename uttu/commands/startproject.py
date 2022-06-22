@@ -10,11 +10,11 @@
 
 import os
 import re
-import typer
+# import typer
 from typing import Optional
 from stat import S_IWUSR
 from uttu.commands import UttuBaseCommand
-from uttu.templates import render_templatefile, string_camelcase
+# from uttu.templates import render_templatefile, string_camelcase
 from uttu.exceptions import UsageError, NameInvalidError
 
 _RENDER = (("${project_name}", "settings.py.tmpl"),)
@@ -33,7 +33,11 @@ class UttuCommand(UttuBaseCommand):
     def desc(self):
         return "Start a new uttu project."
 
-    def _is_valid_name(self, project_name):
+    def help(self):
+        return ""
+
+    @staticmethod
+    def _is_valid_name(project_name):
         """
         Check project name validity
         """
@@ -46,7 +50,8 @@ class UttuCommand(UttuBaseCommand):
             return True
         return False
 
-    def _is_valid_path(self, project_dir):
+    @staticmethod
+    def _is_valid_path(project_dir):
         """
         Check project path validity
         """
@@ -60,10 +65,16 @@ class UttuCommand(UttuBaseCommand):
         return False
 
     def add_options(self, parser):
-        pass
+        UttuBaseCommand.add_options(self, parser)
+        parser.add_argument("-n", "--name", dest="str", action="store_true", help="Set project name")
+        parser.add_argument("-p", "--path", dest="str", action="store_true", help="Set project path,")
+        parser.add_argument("-t", "--templ", dest="str", action="store_true", help="Using pre-built project templates")
 
     def run(self, args, opts):
         """
         Entry point for running commands
         """
-        raise NotImplementedError
+        if not len(args) not in [i for i in range(1, 7)]:
+            raise UsageError()
+
+
