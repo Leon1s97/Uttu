@@ -25,8 +25,6 @@ from uttu.utils.misc import walk_modules
 # sys.path.append(r"E:\Projects\Uttu")
 
 def _iter_command_classes(module_name):
-    # TODO: add `name` attribute to commands and and merge this function with
-    # scrapy.utils.spider.iter_spider_classes
     for module in walk_modules(module_name):
         for obj in vars(module).values():
             if (
@@ -41,9 +39,6 @@ def _iter_command_classes(module_name):
 def _get_commands_from_module(module):
     d = {}
     for cmd in _iter_command_classes(module):
-        # if inproject or not cmd.requires_project:
-        #     cmdname = cmd.__module__.split(".")[-1]
-        #     d[cmdname] = cmd()
         cmdname = cmd.__module__.split(".")[-1]
         d[cmdname] = cmd()
     return d
@@ -133,28 +128,12 @@ def execute(argv=None, settings=None):
     )
     cmd.add_options(parser)
     opts, args = parser.parse_known_args(args=argv[1:])
-    _run_print_help(parser, cmd.process_options, args, opts)
-
-    cmd.crawler_process = CrawlerProcess(settings)
     _run_print_help(parser, _run_command, cmd, args, opts)
     sys.exit(cmd.exitcode)
 
 
 def _run_command(cmd, args, opts):
-    if opts.profile:
-        _run_command_profiled(cmd, args, opts)
-    else:
-        cmd.run(args, opts)
-
-
-def _run_command_profiled(cmd, args, opts):
-    if opts.profile:
-        sys.stderr.write(f"scrapy: writing cProfile stats to {opts.profile!r}\n")
-    loc = locals()
-    p = cProfile.Profile()
-    p.runctx("cmd.run(args, opts)", globals(), loc)
-    if opts.profile:
-        p.dump_stats(opts.profile)
+    cmd.run(args, opts)
 
 
 if __name__ == "__main__":
