@@ -20,6 +20,7 @@ class UttuBaseCommand:
 
     def __init__(self):
         self.settings: Dict[str, Any] = {}
+        self.exitcode: int = 0
 
     def syntax(self):
         """Command syntax (preferably one-line). Do not include command name."""
