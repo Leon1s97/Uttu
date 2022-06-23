@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://github.com/Leon1s97/Uttu/">
-<img src="https://cdn.jsdelivr.net/gh/Leon1s97/Uttu/docs/logo.png" alt="Logo" width="700" height="400">
+<img src="https://cdn.jsdelivr.net/gh/Leon1s97/Uttu/docs/logo/logo_16x9.png" alt="Logo" width="700" height="400">
 </a>
 
 # :sparkles: uttu :sparkles:
@@ -15,23 +15,24 @@
 <!-- Introduction -->
 <div align="center">
 
-# :purple_heart: Introduction
+# :purple_heart: 项目简介
 
 </div>
 
-一款功能强大的Python分布式爬虫框架.
+Uttu 是集成了分布式爬虫框架、运维管理界面以及爬虫工具箱的智能爬虫生态圈。
 
+旨在用简单的方式帮助用户构建面向不同业务场景的复杂爬虫应用。
 
 - Write script in Python
 - Powerful WebUI with script editor, task monitor, project manager and result viewer
-- MongoDB, Redis, SQLite, Microsoft SQL Server, PostgreSQL as database backend
-- RabbitMQ, Redis and Kafka as message queue
+- MongoDB, Redis, SQLite, Microsoft SQL Server, PostgreSQL 作为后端数据库
+- RabbitMQ, Redis and Kafka 作为消息队列
 - Task priority, retry, periodical, recrawl by age, etc...
 - Distributed architecture, Crawl Javascript pages, Python3+ support, etc...
 
-Tutorial: https://github.com/Leon1s97/Uttu/
+快速上手: https://github.com/Leon1s97/Uttu/
 
-Documentation: https://github.com/Leon1s97/Uttu/
+文档: https://github.com/Leon1s97/Uttu/
 
 Release notes: https://github.com/Leon1s97/Uttu/releases
 
@@ -39,14 +40,17 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 <div align="center">
 
-# :blue_heart: Why Uttu
+# :blue_heart: 特性
 
 </div>
 
-| 产品名称      | 技术栈 | 比对 |
-| ----------- | ----------- | ----------- |
-| Uttu      | Title       |
-| 火车头   | Text        |
+
+| 产品名称      | 技术选型 | 特性 |
+| :-----------: |  :-----------: | :-----------: |
+| Uttu      | Python + Javascript + Vue | 
+| 火车头   | C#        |
+
+
 
 
 
@@ -55,17 +59,17 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 <div align="center">
 
-# :heart: QuickStart 
+# :heart: 快速上手 
 
 </div>
 
-### :star2: Installation
+### :star2: 安装Uttu
 
 ```bash
 $ python -m pip install uttu
 ```
 
-### :star2: Directory description:
+### :star2: 项目结构:
 
 ```
 ├─ docs
@@ -86,19 +90,19 @@ $ python -m pip install uttu
 ├─ setup.py
 ```
 
-### :star2: Usage
+### :star2: 使用Uttu
 
 ```bash
 $ python3 -m venv <venv-path>
 $ cd <venv-path>
-$ uttu startproject <projectname>
+$ uttu startproject --name <projectname> --path <projectpath> -- templ <templetes>
 ```
 
 ---
 
 <div align="center">
 
-# :green_heart: Maintainers
+# :green_heart: 贡献者们
 
 <a href="https://github.com/Leon1s97/">
 <img src="https://cdn.jsdelivr.net/gh/Leon1s97/cdn/avatar.jpg" alt="Leon1s" width="80" height="80">
@@ -115,8 +119,7 @@ Thanks for all your wonderful PRs, issues and ideas.
 
 <div align="center">
 
-# :yellow_heart: License 
+# :yellow_heart: 开源许可
 
-[MIT](https://opensource.org/licenses/MIT)
-
+This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license.
 </div>
