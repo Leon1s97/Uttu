@@ -19,7 +19,7 @@
 
 </div>
 
-一款功能强大的Python分布式爬虫框架.
+A Powerful Distributed Crawler Framework Developed by Python.
 
 
 - Write script in Python
@@ -42,14 +42,6 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 # :blue_heart: Why Uttu
 
 </div>
-
-| 产品名称      | 技术栈 | 比对 |
-| ----------- | ----------- | ----------- |
-| Uttu      | Title       |
-| 火车头   | Text        |
-
-
-
 
 ---
 
