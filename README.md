@@ -5,7 +5,7 @@
 
 
 
-# :sparkles: uttu :sparkles:
+# ✨ uttu ✨
 
 ***Next generation distributed crawler framework***
 
@@ -17,7 +17,7 @@
 <!-- Introduction -->
 <div align="center">
 
-# :purple_heart: 项目简介
+# 💖 项目简介
 
 </div>
 
@@ -36,7 +36,7 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 <div align="center">
 
-# :blue_heart: 功能特性
+# 💙 功能特性
 
 </div>
 
@@ -50,7 +50,7 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 - RabbitMQ, Redis and Kafka 作为消息队列
 
 
-### :star2: 同类产品比对
+### 🌟 同类产品比对
 
 | 产品名称      | 技术选型 | 功能比对 |
 | :-----------: |  :-----------: | :-----------: |
@@ -61,24 +61,21 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 
 
-
-
-
 ---
 
 <div align="center">
 
-# :heart: 快速上手 
+#  💜 快速上手 
 
 </div>
 
-### :star2: 安装Uttu
+### 🌟 安装Uttu
 
 ```bash
 $ python -m pip install uttu
 ```
 
-### :star2: 项目结构:
+### 🌟 项目结构:
 
 ```
 ├─ docs
@@ -99,7 +96,7 @@ $ python -m pip install uttu
 ├─ setup.py
 ```
 
-### :star2: 使用Uttu
+### 🌟 使用Uttu
 
 ```bash
 $ python3 -m venv <venv-path>
@@ -111,7 +108,7 @@ $ uttu startproject --name <projectname> --path <projectpath> -- templ <templete
 
 <div align="center">
 
-# :green_heart: 贡献者们
+# 💚 贡献者们
 
 <a href="https://github.com/Leon1s97/">
 <img src="https://cdn.jsdelivr.net/gh/Leon1s97/cdn/avatar.jpg" alt="Leon1s" width="80" height="80">
@@ -128,7 +125,7 @@ Thanks for all your wonderful PRs, issues and ideas.
 
 <div align="center">
 
-# :yellow_heart: 开源许可
+# 💛 开源许可
 
 This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license.
 </div>
