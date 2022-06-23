@@ -25,14 +25,6 @@ Uttu 是集成了**分布式爬虫框架**、**开发运维界面**以及**爬�
 
 旨在用简单的方式帮助用户快速构建面向不同业务场景的爬虫应用。
 
-- 基于CLI开发的项目模板渲染器，可快速构建爬虫项目
-- 内置轻量级爬虫和分布式爬虫，可应对各种需求场景
-- 模块化设计，大大提高兼容性和可复用性，减少重复开发
-- 支持项目的一键注册，上线及更新，无缝对接开发运维界面
-- 常用功能整合为爬虫工具箱，丰富的配套设施和插件支持
-
-- 为MongoDB, Redis, SQLite, Microsoft SQL Server, PostgreSQL 等常用数据库提供支持
-- RabbitMQ, Redis and Kafka 作为消息队列
 
 快速上手: https://github.com/Leon1s97/Uttu/
 
@@ -48,6 +40,14 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 </div>
 
+
+- 基于CLI开发的项目模板渲染器，可快速构建爬虫项目
+- 内置轻量级爬虫和分布式爬虫，可应对各种需求场景
+- 模块化设计，大大提高兼容性和可复用性，减少重复开发
+- 支持项目的一键注册，上线及更新，无缝对接开发运维界面
+- 常用功能整合为爬虫工具箱，丰富的配套设施和插件支持, 降低爬虫成本
+- 为MongoDB, Redis, SQLite, Microsoft SQL Server, PostgreSQL 等常用数据库提供支持
+- RabbitMQ, Redis and Kafka 作为消息队列
 
 
 ### :star2: 同类产品比对
@@ -117,7 +117,7 @@ $ uttu startproject --name <projectname> --path <projectpath> -- templ <templete
 <img src="https://cdn.jsdelivr.net/gh/Leon1s97/cdn/avatar.jpg" alt="Leon1s" width="80" height="80">
 </a>
 
-[![Leon1s97's GitHub stats](https://github-readme-stats.vercel.app/api?username=Leon1s97&show_icons=true&theme=vue)](https://github.com/anuraghazra/github-readme-stats)
+<!-- [![Leon1s97's GitHub stats](https://github-readme-stats.vercel.app/api?username=Leon1s97&show_icons=true&theme=vue)](https://github.com/anuraghazra/github-readme-stats) -->
 
 
 Thanks for all your wonderful PRs, issues and ideas. 
