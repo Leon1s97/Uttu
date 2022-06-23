@@ -10,12 +10,14 @@
 
 import os
 import re
-# import typer
-from typing import Optional
 from stat import S_IWUSR
+from pathlib import Path, WindowsPath
+from typing import Optional
+
+import uttu
 from uttu.commands import UttuBaseCommand
 # from uttu.templates import render_templatefile, string_camelcase
-from uttu.exceptions import UsageError, NameInvalidError
+from uttu.exceptions import UsageError, NameInvalidError, PathInvalidError
 
 _RENDER = (("${project_name}", "settings.py.tmpl"),)
 
@@ -42,27 +44,19 @@ class UttuCommand(UttuBaseCommand):
         Check project name validity
         """
         if not re.search(r"^[_a-zA-Z]\w*$", project_name):
-            print(
-                "Error: Project names must begin with a letter and contain"
-                " only\nletters, numbers and underscores"
-            )
+            return False
         else:
             return True
-        return False
 
     @staticmethod
-    def _is_valid_path(project_dir):
+    def _is_valid_path(project_dir: WindowsPath):
         """
         Check project path validity
         """
-        if not re.search(r"^[_a-zA-Z]\w*$", project_dir):
-            print(
-                "Error: Project names must begin with a letter and contain"
-                " only\nletters, numbers and underscores"
-            )
-        else:
+        if project_dir.exists() and project_dir.is_dir():
             return True
-        return False
+        else:
+            return False
 
     def add_options(self, parser):
         UttuBaseCommand.add_options(self, parser)
@@ -71,6 +65,37 @@ class UttuCommand(UttuBaseCommand):
         parser.add_argument("-t", "--templ", dest="templ", choices=['sfss', 'credit'],
                             help="Using pre-built project templates")
 
+    def _copytree(self, src, dst):
+        """
+        Since the original function always creates the directory, to resolve
+        the issue a new function had to be created. It's a simple copy and
+        was reduced for this case.
+
+        More info at:
+        https://github.com/scrapy/scrapy/pull/2005
+        """
+        ignore = IGNORE
+        names = os.listdir(src)
+        ignored_names = ignore(src, names)
+
+        if not os.path.exists(dst):
+            os.makedirs(dst)
+
+        for name in names:
+            if name in ignored_names:
+                continue
+
+            srcname = os.path.join(src, name)
+            dstname = os.path.join(dst, name)
+            if os.path.isdir(srcname):
+                self._copytree(srcname, dstname)
+            else:
+                copy2(srcname, dstname)
+                _make_writable(dstname)
+
+        copystat(src, dst)
+        _make_writable(dst)
+
     def run(self, args, opts):
         """
         Entry point for running commands
@@ -78,4 +103,31 @@ class UttuCommand(UttuBaseCommand):
         if len(args) not in [i for i in range(0, 4)]:
             raise UsageError()
 
+        project_name: str = opts['name']
+        project_path: Optional[WindowsPath] = Path(opts['path']) if opts['path'] else None
+        templ: Optional[str] = opts['templ'] if opts['templ'] else None
 
+        if self._is_valid_name(project_name):
+            self.exitcode = 1
+            raise NameInvalidError()
+
+        if self._is_valid_path(project_path):
+            self.exitcode = 1
+            raise PathInvalidError()
+
+        if templ:
+            # TODO: Render different project templates based on parameters[templ]
+            pass
+        else:
+            # Render builtin project templates
+
+            print(f"New Uttu project '{project_name}', using builtin project templates "
+                  f"'{self.templates_dir}', created in:")
+            print(f"    {abspath(project_dir)}\n")
+            print("You can start your first spider with:")
+            print(f"    cd {project_dir}")
+            print("    scrapy genspider example example.com")
+
+    @property
+    def templates_dir(self):
+        return Path(uttu.__path__[0]) / 'templates' / 'project'
