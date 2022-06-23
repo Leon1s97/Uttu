@@ -3,6 +3,8 @@
 <img src="https://cdn.jsdelivr.net/gh/Leon1s97/Uttu/docs/logo/logo_16x9.png" alt="Logo" width="700" height="400">
 </a>
 
+
+
 # :sparkles: uttu :sparkles:
 
 ***Next generation distributed crawler framework***
@@ -19,16 +21,18 @@
 
 </div>
 
-Uttu 是集成了分布式爬虫框架、运维管理界面以及爬虫工具箱的智能爬虫生态圈。
+Uttu 是集成了**分布式爬虫框架**、**开发运维界面**以及**爬虫工具箱**的智能爬虫生态圈。
 
-旨在用简单的方式帮助用户构建面向不同业务场景的复杂爬虫应用。
+旨在用简单的方式帮助用户快速构建面向不同业务场景的爬虫应用。
 
-- Write script in Python
-- Powerful WebUI with script editor, task monitor, project manager and result viewer
-- MongoDB, Redis, SQLite, Microsoft SQL Server, PostgreSQL 作为后端数据库
+- 基于CLI开发的项目模板渲染器，可快速构建爬虫项目
+- 内置轻量级爬虫和分布式爬虫，可应对各种需求场景
+- 模块化设计，大大提高兼容性和可复用性，减少重复开发
+- 支持项目的一键注册，上线及更新，无缝对接开发运维界面
+- 常用功能整合为爬虫工具箱，丰富的配套设施和插件支持
+
+- 为MongoDB, Redis, SQLite, Microsoft SQL Server, PostgreSQL 等常用数据库提供支持
 - RabbitMQ, Redis and Kafka 作为消息队列
-- Task priority, retry, periodical, recrawl by age, etc...
-- Distributed architecture, Crawl Javascript pages, Python3+ support, etc...
 
 快速上手: https://github.com/Leon1s97/Uttu/
 
@@ -40,15 +44,20 @@ Release notes: https://github.com/Leon1s97/Uttu/releases
 
 <div align="center">
 
-# :blue_heart: 特性
+# :blue_heart: 功能特性
 
 </div>
 
 
-| 产品名称      | 技术选型 | 特性 |
+
+### :star2: 同类产品比对
+
+| 产品名称      | 技术选型 | 功能比对 |
 | :-----------: |  :-----------: | :-----------: |
-| Uttu      | Python + Javascript + Vue | 
-| 火车头   | C#        |
+| Uttu      | Python + Golang + VueJS | |
+| 火车头   | C#        | |
+| Scrapy   | Python        | |
+| SpiderEngine V1  | python        | |
 
 
 
